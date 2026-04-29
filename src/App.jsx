@@ -30,6 +30,22 @@ function App1() {
     );
 }
 
+// Question Number 2
+function App2() {
+    const [price, setPrice] = useState(100);
+
+    function handlePriceClick() {
+        setPrice(75)
+    }
+
+    return (
+        <div>
+            <p data-testid="price">${price}</p>
+            <button onClick={handlePriceClick}>Apply Discount</button>
+        </div>
+    );
+}
 
 
-export default App1;
+
+export default App2;
