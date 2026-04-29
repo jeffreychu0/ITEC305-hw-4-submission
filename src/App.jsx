@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from 'react';
 import './App.css'
+import { Todo } from "./components/Todo";
 
 // Question Number 1
 export const user = {
@@ -73,5 +74,19 @@ function App4() {
     );
 }
 
+export const DUMMY_TODOS = [
+    'Learn React',
+    'Practice React',
+    'Profit!'
+];
 
-export default App2;
+function App5() {
+    return (
+        <ul>
+            {DUMMY_TODOS.map((item) => <Todo text={item} />)}
+        </ul>
+    );
+}
+
+
+export default App5;
