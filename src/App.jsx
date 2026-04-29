@@ -1,12 +1,14 @@
 import { useState } from "react";
+import React from 'react';
+import './App.css'
 
-//Question
+// Question Number 1
 export const user = {
     name: '',
 };
 
-function App() {
-
+function App1() {
+    const name = "Jeffrey"
     // Your goal: This function should be called WITH A VALUE for name when the <button> is clicked
     function handleCreateUser(name) {
         user.name = name;
@@ -22,10 +24,12 @@ function App() {
             </p>
 
             <p id="actions">
-                <button onClick={() => handleCreateUser('george')}>Create User</button>
+                <button onClick={() => handleCreateUser(name)}>Create User</button>
             </p>
-        </div >
+        </div>
     );
 }
 
-export default App;
+
+
+export default App1;
